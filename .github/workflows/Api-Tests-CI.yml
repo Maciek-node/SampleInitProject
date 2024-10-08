@@ -5,13 +5,12 @@ env:
   SECRET_USERNAME: ${{ secrets.SECRET_USERNAME }}
 
 on:
+  schedule:
+    - cron: '2 * * * *'
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-on:    
-  schedule:
-    - cron: '2 * * * *'
 
 jobs:
   build:
