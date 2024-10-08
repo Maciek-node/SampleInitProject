@@ -1,7 +1,7 @@
 name: Api-tests
 
 env:
-  SECRET_PASSWORD: $({ secrets.SECRET_GITHUB_PASSWORD })
+  SECRET_PASSWORD: ${{ secrets.SECRET_GITHUB_PASSWORD_2 }}
 
 on:
   push:
