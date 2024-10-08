@@ -2,6 +2,7 @@ name: Api-tests
 
 env:
   SECRET_PASSWORD: ${{ secrets.SECRET_GITHUB_PASSWORD_2 }}
+  SECRET_USERNAME: ${{ secrets.SECRET_USERNAME }}
 
 on:
   push:
